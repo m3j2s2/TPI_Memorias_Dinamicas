@@ -108,9 +108,7 @@ begin
     writeln('BIENVENIDO A LA SIMULACION DE ASIGNACION DE MEMORIA DINAMICA');
     writeln('Que desea hacer?');
     Writeln('1- Cargar tanda de procesos de prueba( ya viene con sus propia configuracion de memoria) ');
-    writeln('2- Cargar Simulaciones');
-    Writeln('3- Crear tanda de procesos');
-    writeln('4- ver utlima simulacion');
+    writeln('2- Crear Simulaciones');
     readln(opcion);
     repeat
         case opcion of
@@ -118,7 +116,7 @@ begin
             2:CargarProcesos(archivo,procesos,memoria);
             //3:;
             end;
-    until (opcion>0) and (opcion<4);
+    until (opcion>0) and (opcion<2);
     repeat
     begin
         writeln('Ingrese el modo de asignacion de particiones que deseea emplear en esta simulacion');
